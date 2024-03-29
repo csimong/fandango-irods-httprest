@@ -11,3 +11,7 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
+
+# Paths and enpoints
+## Swagger documentation
+http://127.0.0.1:4000/
