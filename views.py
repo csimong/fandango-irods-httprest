@@ -12,7 +12,7 @@ def register_views(app):
             return jsonify(projects_list)
 
     @app.route('/copydata/', methods=['POST'])
-    def get_copydata():
+    def post_copydata():
             
             # Get data from request
             data = request.get_json()
