@@ -1,5 +1,6 @@
 from flask import Flask
 from db import db
+from views import register_views
 
 # Instanciate flask app
 app = Flask(__name__)
@@ -15,6 +16,7 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
+register_views(app)
 
 if __name__ == '__main__':
     app.run(port=4000, debug=True)
